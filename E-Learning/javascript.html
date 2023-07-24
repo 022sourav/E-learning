@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Merriweather&family=Montserrat&family=Nunito:wght@200;300;400;600;700&family=Readex+Pro&family=Sacramento&display=swap');
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SmartStudy</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="computer_mat.html" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Engineering Subjects
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a id="comp" class="dropdown-item" href="computer_mat.html">Computer</a></li>
+            <li><a id="it" class="dropdown-item" href="it_pdf.html">Information Technology</a></li>
+            <!-- <li><a id="entc" class="dropdown-item" href="#">Electronics & Telecommunication</a></li> -->
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button id="login" class="btn btn-outline-success mx-4" type="submit"><a href="login.html">Login</a></button>
+        <button id="signup" class="btn btn-outline-success mx-4" type="submit"><a href="signup.html">Signup</a></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item-js">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          JAVASCRIPT INTRODUCTION
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>The SCRIPT Tag</strong>
+          <br>
+          In HTML, JavaScript code is inserted between &lt;script&gt; and &lt;script&gt; tags.
+          <br>
+          <strong>JavaScript Functions and Events</strong>
+          <br>
+          A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+          <br>
+          For example, a function can be called when an event occurs, like when the user clicks a button.
+          JavaScript in &lt;head&gt; or &lt;body&gt;
+          You can place any number of scripts in an HTML document.
+
+          Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of an HTML page, or in both.
+          <br>
+          JavaScript in &lt;head&gt;
+          In this example, a JavaScript function is placed in the &lt;head&gt; section of an HTML page.
+          <br>
+          The function is invoked (called) when a button is clicked
+          <br>
+          <strong> External JavaScript</strong><br>
+          Scripts can also be placed in external files. <br>
+          External scripts are practical when the same code is used in many different web pages.<br>
+
+          JavaScript files have the file extension .js.<br>
+
+          To use an external script, put the name of the script file in the src (source) attribute of a
+          &lt;script&gt; tag:<br>
+          You can place an external script reference in &lt;head&gt; or &lt;body&gt; as you like.<br>
+
+          The script will behave as if it was located exactly where the &lt;script&gt; tag is located.<br>
+
+          External scripts cannot contain &lt;script&gt; tags.<br><br>
+          External JavaScript Advantages <br>
+          Placing scripts in external files has some advantages: <br>
+
+          It separates HTML and code <br>
+          It makes HTML and JavaScript easier to read and maintain <br>
+          Cached JavaScript files can speed up page loads <br>
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item-js">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          JAVASCRIPT OUTPUT <br>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <strong>JavaScript Display Possibilities</strong><br>
+          JavaScript can "display" data in different ways: <br>
+
+          Writing into an HTML element, using innerHTML. <br>
+          Writing into the HTML output using document.write(). <br>
+          Writing into an alert box, using window.alert(). <br>
+          Writing into the browser console, using console.log(). <br>
+          Using innerHTML <br>
+          To access an HTML element, JavaScript can use the document.getElementById(id) method. <br>
+
+          The id attribute defines the HTML element. The innerHTML property defines the HTML content. <br>
+
+          Using document.write() <br>
+          For testing purposes, it is convenient to use document.write(): <br>
+          Using document.write() after an HTML document is loaded, will delete all existing HTML <br>
+          The document.write() method should only be used for testing. <br>
+          Using window.alert() <br>
+          You can use an alert box to display data. <br>
+          Using console.log() <br>
+          For debugging purposes, you can call the console.log() method in the browser to display data. <br>
+          <strong>JavaScript Print</strong> <br>
+          JavaScript does not have any print object or print methods. <br>
+
+          You cannot access output devices from JavaScript. <br>
+
+          The only exception is that you can call the window.print() method in the browser to print the content of the
+          current window. <br>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item-js">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          JAVASCRIPT EVENT HANDLERS
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Common HTML Events</strong>
+          Here is a list of some common HTML events: <br>
+
+          Event Description <br>
+          onchange An HTML element has been changed <br>
+          onclick The user clicks an HTML element <br>
+          onmouseover The user moves the mouse over an HTML element <br>
+          onmouseout The user moves the mouse away from an HTML element <br>
+          onkeydown The user pushes a keyboard key <br>
+          onload The browser has finished loading the page <br>
+          The list is much longer: W3Schools JavaScript Reference HTML DOM Events. <br><br>
+
+          <strong> JavaScript Event Handlers</strong> <br>
+          Event handlers can be used to handle and verify user input, user actions, and browser actions: <br>
+
+          Things that should be done every time a page loads <br>
+          Things that should be done when the page is closed <br>
+          Action that should be performed when a user clicks a button <br>
+          Content that should be verified when a user inputs data <br>
+          And more ... <br>
+          Many different methods can be used to let JavaScript work with events: <br>
+
+          HTML event attributes can execute JavaScript code directly <br>
+          HTML event attributes can call JavaScript functions <br>
+          You can assign your own event handler functions to HTML elements <br>
+          You can prevent events from being sent or being handled <br>
+          And more ... <br>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item-js">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+            aria-expanded="true" aria-controls="collapseFour">
+            JAVASCRIPT STRINGS
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            JavaScript strings are for storing and manipulating text. <br>
+            A JavaScript string is zero or more characters written inside quotes. <br>
+            Example <br>
+            let text = "John Doe"; <br>
+            You can use single or double quotes: <br>
+
+            Example <br>
+            let carName1 = "Volvo XC60"; // Double quotes <br>
+            let carName2 = 'Volvo XC60'; // Single quotes <br>
+            You can use quotes inside a string, as long as they don't match the quotes surrounding the string: <br>
+
+            Example <br>
+            let answer1 = "It's alright"; <br>
+            let answer2 = "He is called 'Johnny'"; <br>
+            let answer3 = 'He is called "Johnny"'; <br>
+            String Length <br>
+            To find the length of a string, use the built-in length property: <br>
+
+            Example <br>
+            let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+            let length = text.length; <br>
+
+            Escape Character <br>
+            Because strings must be written within quotes, JavaScript will misunderstand this string: <br>
+
+            let text = "We are the so-called "Vikings" from the north."; <br>
+            The string will be chopped to "We are the so-called ". <br>
+
+            The solution to avoid this problem, is to use the backslash escape character. <br>
+
+            The backslash (\) escape character turns special characters into string characters: <br>
+
+            Code Result Description <br>
+            \' ' Single quote <br>
+            \" " Double quote <br>
+            \\ \ Backslash <br>
+            The sequence \" inserts a double quote in a string: <br>
+
+            Example <br>
+            let text = "We are the so-called \"Vikings\" from the north."; <br>
+            The sequence \' inserts a single quote in a string: <br>
+
+            Example <br>
+            let text= 'It\'s alright.'; <br>
+            The sequence \\ inserts a backslash in a string: <br>
+
+            Example <br>
+            let text = "The character \\ is called backslash."; <br>
+            Six other escape sequences are valid in JavaScript: <br>
+
+            Code Result <br>
+            \b Backspace <br>
+            \f Form Feed <br>
+            \n New Line <br>
+            \r Carriage Return <br>
+            \t Horizontal Tabulator <br>
+            \v Vertical Tabulator <br>
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item-js">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            JAVASCRIPT STRING METHODS
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            JavaScript String Methods <br>
+            String methods help you to work with strings. <br>
+
+            String Methods and Properties <br>
+            Primitive values, like "John Doe", cannot have properties or methods (because they are not objects). <br>
+
+            But with JavaScript, methods and properties are also available to primitive values, because JavaScript
+            treats primitive values as objects when executing methods and properties. <br>
+
+            JavaScript String Length <br>
+            The length property returns the length of a string: <br><br>
+
+            Example <br>
+            let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+            let length = txt.length; <br><br>
+            Extracting String Parts <br>
+            There are 3 methods for extracting a part of a string: <br>
+
+            slice(start, end) <br>
+            substring(start, end) <br>
+            substr(start, length) <br>
+            JavaScript String slice() <br>
+            slice() extracts a part of a string and returns the extracted part in a new string. <br>
+
+            The method takes 2 parameters: the start position, and the end position (end not included). <br>
+
+            Example <br>
+            Slice out a portion of a string from position 7 to position 13 (13 not included): <br>
+
+            let str = "Apple, Banana, Kiwi"; <br>
+            let part = str.slice(7, 13); <br><br>
+            Note <br>
+            JavaScript counts positions from zero. <br>
+
+            First position is 0. <br>
+
+            Second position is 1. <br>
+
+            If a parameter is negative, the position is counted from the end of the string. <br>
+
+            This example slices out a portion of a string from position -12 to position -6: <br><br>
+
+            Example <br>
+            let str = "Apple, Banana, Kiwi"; <br>
+            let part = str.slice(-12, -6); <br>
+            If you omit the second parameter, the method will slice out the rest of the string: <br>
+
+            Example <br>
+            let part = str.slice(7); <br>
+            or, counting from the end: <br><br>
+
+            Example <br>
+            let part = str.slice(-12); <br>
+
+            JavaScript String substring() <br>
+            substring() is similar to slice(). <br>
+
+            The difference is that start and end values less than 0 are treated as 0 in substring(). <br><br>
+
+            Example <br>
+            let str = "Apple, Banana, Kiwi"; <br>
+            let part = str.substring(7, 13);<br>
+
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item-js">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            JAVASCRIPT ARRAYS 
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <br>
+            An array is a special variable, which can hold more than one value: <br>
+
+            const cars = ["Saab", "Volvo", "BMW"]; <br>
+            Why Use Arrays? <br>
+            If you have a list of items (a list of car names, for example), storing the cars in single variables could
+            look like this: <br>
+
+            let car1 = "Saab"; <br>
+            let car2 = "Volvo"; <br>
+            let car3 = "BMW"; <br>
+            However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars,
+            but 300? <br>
+
+            The solution is an array! <br>
+
+            An array can hold many values under a single name, and you can access the values by referring to an index
+            number. <br>
+
+            Creating an Array <br>
+            Using an array literal is the easiest way to create a JavaScript Array. <br>
+
+            Syntax: <br>
+
+            const array_name = [item1, item2, ...]; <br>
+            It is a common practice to declare arrays with the const keyword. <br>
+
+            Learn more about const with arrays in the chapter: JS Array Const. <br>
+
+            Example <br>
+            const cars = ["Saab", "Volvo", "BMW"]; <br>
+            Spaces and line breaks are not important. A declaration can span multiple lines: <br>
+
+            Example <br>
+            const cars = [
+            "Saab",
+            "Volvo",
+            "BMW"
+            ]; <br>
+            You can also create an array, and then provide the elements: <br>
+
+            Example <br>
+            const cars = [];
+            cars[0]= "Saab";
+            cars[1]= "Volvo";
+            cars[2]= "BMW"; <br>
+            Using the JavaScript Keyword new <br>
+            The following example also creates an Array, and assigns values to it: <br>
+
+            Example <br>
+            const cars = new Array("Saab", "Volvo", "BMW"); <br>
+            The two examples above do exactly the same. <br>
+
+            There is no need to use new Array(). <br>
+
+            For simplicity, readability and execution speed, use the array literal method. <br>
+
+            Accessing Array Elements <br>
+            You access an array element by referring to the index number: <br>
+
+            const cars = ["Saab", "Volvo", "BMW"]; <br>
+            let car = cars[0]; <br>
+            Note: Array indexes start with 0. <br>
+
+            [0] is the first element. [1] is the second element. <br>
+
+            Changing an Array Element <br>
+            This statement changes the value of the first element in cars: <br>
+            cars[0] = "Opel"; <br>
+            Example <br>
+            const cars = ["Saab", "Volvo", "BMW"]; <br>
+            cars[0] = "Opel"; <br>
+            Access the Full Array <br>
+            With JavaScript, the full array can be accessed by referring to the array name: <br>
+
+            Example <br>
+            const cars = ["Saab", "Volvo", "BMW"]; <br>
+            document.getElementById("demo").innerHTML = cars; <br>
+            Arrays are Objects <br>
+            Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays. <br>
+
+            But, JavaScript arrays are best described as arrays. <br>
+
+            Arrays use numbers to access its "elements". In this example, person[0] returns John: <br>
+
+            Array: <br>
+            const person = ["John", "Doe", 46]; <br>
+            Objects use names to access its "members". In this example, person.firstName returns John: <br>
+
+            Object: <br>
+            const person = {firstName:"John", lastName:"Doe", age:46}; <br>
+            Array Elements Can Be Objects <br>
+            JavaScript variables can be objects. Arrays are special kinds of objects. <br>
+
+            Because of this, you can have variables of different types in the same Array. <br>
+
+            You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array: <br>
+
+            myArray[0] = Date.now;
+            myArray[1] = myFunction;
+            myArray[2] = myCars; <br>
+            Array Properties and Methods <br>
+            The real strength of JavaScript arrays are the built-in array properties and methods: <br>
+
+            cars.length // Returns the number of elements <br>
+            cars.sort() // Sorts the array <br>
+            Array methods are covered in the next chapters. <br>
+
+            The length Property <br>
+            The length property of an array returns the length of an array (the number of array elements). <br>
+
+            Example <br>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            let length = fruits.length; <br>
+            The length property is always one more than the highest array index. <br>
+
+            Accessing the First Array Element <br>
+            Example <br>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            let fruit = fruits[0]; <br>
+            Accessing the Last Array Element <br>
+            Example <br>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            let fruit = fruits[fruits.length - 1]; <br>
+            Looping Array Elements <br>
+            One way to loop through an array, is using a for loop: <br>
+
+            Example <br>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            let fLen = fruits.length; <br>
+
+            
+          </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

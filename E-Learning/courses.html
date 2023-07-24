@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Merriweather&family=Montserrat&family=Nunito:wght@200;300;400;600;700&family=Readex+Pro&family=Sacramento&display=swap');
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SmartStudy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="computer_mat.html" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Engineering Subjects
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a id="comp" class="dropdown-item" href="computer_mat.html">Computer</a></li>
+            <li><a id="it" class="dropdown-item" href="#">Information Technology</a></li>
+            <li><a id="entc" class="dropdown-item" href="#">Electronics & Telecommunication</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button id="login" class="btn btn-outline-success mx-4" type="submit"><a href="login.html">Login</a></button>
+        <button id="signup" class="btn btn-outline-success mx-4" type="submit"><a href="signup.html">Signup</a></button>
+      </form>
+    </div>
+  </div>
+</nav>
+<section class="main-box">
+  <div class="left-main">
+    <h1>The Future of Education is here</h1>
+    <p>
+      <li class="crs-text padd-left">Online learning is self-paced</li>
+      <li class="crs-text padd-left">E-Learning is student-centered</li>
+      <li class="crs-text padd-left">E-Learning is cost-effective</li>
+      <li class="crs-text padd-left">Individual learning styles</li>
+      <li class="crs-text padd-left">Customizable learning environments</li>
+      <li class="crs-text padd-left">E-Learning fully utilizes analytics</li>
+      <li class="crs-text padd-left">Online learning could solve teacher scarcity</li>
+      <li class="crs-text padd-left">E-Learning is environmentally friendly</li>
+      <li class="crs-text padd-left">No need for textbooks</li>
+      <li class="crs-text padd-left">Online learning is time-efficient</li>
+    </p>
+
+  </div>
+  <div class="right-main">
+    <img src="laptop_png.png" alt="">
+  </div>
+</section>
+
+<section class="courses">
+  <h1 id="courseH">Courses Available</h1>
+  <div class="course-item">
+    <div class="desc">
+      <h2 class="course-h python-crs">Python Course</h2>
+      <p class="crs-text">Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn’t specialized for any specific problems. This versatility, along with its beginner-friendliness, has made it one of the most-used programming languages today.</p>
+      <a href="PYTHON.html">
+        <button class="btn-sm pyt-btn">Start Now</button>
+      </a>
+    </div>
+    <img src="python_png.jpg" class="course-img python-crs" alt="">
+  </div>
+  <div class="course-item">
+    <div class="left">
+      <img src="js_png.jpg" class="course-img-odd" alt="">
+    </div>
+    <div class="desc desc-odd">
+      <h2 class="course-h">Javascript Course</h2>
+      <p class="crs-text">JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.Javascript is used by programmers across the world to create dynamic and interactive web content like applications and browsers. JavaScript is so popular that it's the most used programming language in the world, used as a client-side programming language by 97.0% of all websites.</p>
+      <a href="javascript.html">
+        <button class="btn-sm">Start Now</button>
+      </a>
+    </div>
+  </div>
+  <div class="course-item">
+    <div class="desc">
+      <h2 class="course-h">C++ Course</h2>
+      <p class="crs-text">C++ is a programming language, which has imperative and object-oriented programming(OOPs) features. It is referred to as a middle-level programming language.It supports official, object-oriented and generic programming. It is having a rich standard library with a rich set of functions manipulating files and methods manipulating data structures in ease and fast way etc. This language is widely used among programmers or developers mainly in the application domain. It contains the important parts including the core language providing all the required building blocks including variables, data types, constants, etc.</p>
+      <a href="cpp.html">
+        <button class="btn-sm pyt-btn">Start Now</button>
+      </a>
+    </div>
+    <img src="cpp_logo-600x675.png" class="course-img" alt="">
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

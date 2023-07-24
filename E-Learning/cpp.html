@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Merriweather&family=Montserrat&family=Nunito:wght@200;300;400;600;700&family=Readex+Pro&family=Sacramento&display=swap');
+  </style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SmartStudy</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="computer_mat.html" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Engineering Subjects
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a id="comp" class="dropdown-item" href="computer_mat.html">Computer</a></li>
+            <li><a id="it" class="dropdown-item" href="it_pdf.html">Information Technology</a></li>
+            <!-- <li><a id="entc" class="dropdown-item" href="#">Electronics & Telecommunication</a></li> -->
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button id="login" class="btn btn-outline-success mx-4" type="submit"><a href="login.html">Login</a></button>
+        <button id="signup" class="btn btn-outline-success mx-4" type="submit"><a href="signup.html">Signup</a></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<body>
+
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          C++ Introduction
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          What is C++? <br>
+          C++ is a cross-platform language that can be used to create high-performance applications. <br>
+
+          C++ was developed by Bjarne Stroustrup, as an extension to the C language. <br>
+
+          C++ gives programmers a high level of control over system resources and memory. <br>
+
+          The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17, C++20. <br>
+
+          Why Use C++ <br>
+          C++ is one of the world's most popular programming languages. <br>
+
+          C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems. <br>
+
+          C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be
+          reused, lowering development costs. <br>
+
+          C++ is portable and can be used to develop applications that can be adapted to multiple platforms. <br>
+
+          C++ is fun and easy to learn! <br>
+
+          As C++ is close to C# and Java, it makes it easy for programmers to switch to C++ or vice versa <br><br>
+
+          <strong>C++ Syntax</strong> <br>
+          Let's break up the following code to understand it better: <br>
+
+          Example <br>
+          #include <iostream> <br>
+            using namespace std; <br>
+
+            int main() { <br>
+            cout &lt;&lt; "Hello World!" ; return 0; } <br>Example explained <br>Line 1: #include &lt;iostream&gt; is a
+            header
+            file library
+            that lets us work with input and output objects, such as cout (used in line 5). <br>Header files add
+            functionality to C++ programs. <br>
+
+            Line 2: using namespace std means that we can use names for objects and variables from the standard
+            library. <br>
+
+            Don't worry if you don't understand how #include &lt;iostream&gt; and using namespace std works. Just think
+            of
+            it as something that (almost) always appears in your program. <br>
+
+            Line 3: A blank line. C++ ignores white space. But we use it to make the code more readable. <br>
+
+            Line 4: Another thing that always appear in a C++ program, is int main(). This is called a function. <br>Any
+            code inside its curly brackets {} will be executed. <br>
+
+            Line 5: cout (pronounced "see-out") is an object used together with the insertion operator (&lt;&lt;) to
+            output/print text. <br>In our example it will output "Hello World" . Note: Every C++ statement ends with a
+            semicolon ;. <br> Note: The body of int main() could also been written as: int main () { cout
+            &lt;&lt; "Hello World! " ; return 0; } <br>Remember: The compiler ignores white spaces. However, multiple
+            lines
+            makes the code more readable. <br>Line 6: return 0 ends the main function. <br>Line 7: Do not forget to add
+            the closing curly bracket } to actually end the main function. <br> Omitting Namespace You might see some
+            C++ programs that runs without the standard namespace library. <br>The using namespace std line can be
+            omitted and replaced with the std keyword, followed by the :: operator for some objects: <br>Example <br>
+            #include &lt;iostream&gt; <br>int main() { <br>std::cout &gt;&gt; "Hello World!" ; return 0; <br>} <br>It is
+            up to you
+            if you want to include the standard namespace library or not. <br>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          C++ VARIABLES
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Variables are containers for storing data values. <br>
+
+          In C++, there are different types of variables (defined with different keywords), <br> for example: <br>
+
+          int - stores integers (whole numbers), without decimals, such as 123 or -123 <br>
+          double - stores floating point numbers, with decimals, such as 19.99 or -19.99 <br>
+          char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes <br>
+          string - stores text, such as "Hello World". String values are surrounded by double quotes <br>
+          bool - stores values with two states: true or false <br>
+          Declaring (Creating) Variables <br>
+          To create a variable, specify the type and assign it a value: <br>
+
+          Syntax <br>
+          type variableName = value; <br>
+          Where type is one of C++ types (such as int), and variableName is the name of the variable (such as x or
+          myName). The equal sign is used to assign values to the variable. <br>
+
+          To create a variable that should store a number, look at the following example: <br>
+
+          Example <br>
+          Create a variable called myNum of type int and assign it the value 15: <br>
+
+          int myNum = 15; <br>
+          cout << myNum; You can also declare a variable without assigning the value, and assign the value later: <br>
+            Example <br>int myNum; myNum=15; cout << myNum; <br>Note that if you assign a new value to an existing
+              variable, it
+              will overwrite the previous value: <br> Example <br> int myNum=15; // myNum is 15 myNum=10; // Now myNum
+              is 10 cout << myNum; // Outputs 10 <br>Other Types A demonstration of other data types: <br>Example
+                <br>int myNum=5; // Integer (whole
+                number without decimals) <br>double myFloatNum=5.99; // Floating point number (with decimals) <br>char
+                myLetter='D'
+                ; // Character string myText="Hello" ; // String (text) <br>bool myBoolean=true; // Boolean (true or
+                false) <br>You
+                will learn more about the individual types in the Data Types chapter. Display Variables The cout object
+                is
+                used together with the << operator to display variables. To combine both text and a variable, separate
+                  them with the << operator: <br> Example <br>int myAge=35; cout << "I am " << myAge << " years old." ;
+                    <br> Add Variables
+                    Together To add a variable to another variable, you can use the + operator: <br>Example int x=5; int
+                    y=6; int
+                    sum=x + y; cout << sum; </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          C++ DATA TYPES
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          As explained in the Variables chapter, a variable in C++ must be a specified data type: <br>
+
+          Example <br>
+          int myNum = 5; // Integer (whole number) <br>
+          float myFloatNum = 5.99; // Floating point number <br>
+          double myDoubleNum = 9.98; // Floating point number <br>
+          char myLetter = 'D'; // Character <br>
+          bool myBoolean = true; // Boolean <br>
+          string myText = "Hello"; // String <br>
+          Basic Data Types <br>
+          The data type specifies the size and type of information the variable will store: <br>
+
+          Data Type Size Description <br>
+          boolean 1 byte Stores true or false values <br>
+          char 1 byte Stores a single character/letter/number, or ASCII values <br>
+          int 2 or 4 bytes Stores whole numbers, without decimals <br>
+          float 4 bytes Stores fractional numbers, containing one or more decimals. Sufficient for storing 7 decimal
+          digits <br>
+          double 8 bytes Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal
+          digits <br><br>
+
+          <strong>C++ Numeric Data Types</strong> <br>
+          Numeric Types <br>
+          Use int when you need to store a whole number without decimals, like 35 or 1000, and float or double when
+          you need a floating point number (with decimals), like 9.99 or 3.14515. <br>
+
+          int <br>
+          int myNum = 1000; <br>
+          cout << myNum; <br>
+            float <br>
+            float myNum = 5.75; <br>
+            cout << myNum; <br>
+              double <br>
+              double myNum = 19.99; <br>
+              cout << myNum; <br>
+                float vs. double <br>
+
+                The precision of a floating point value indicates how many digits the value can have after the decimal
+                point. <br> The precision of float is only six or seven decimal digits, while double variables have a
+                precision of about 15 digits. Therefore it is safer to use double for most calculations. <br>
+
+                Scientific Numbers <br>
+                A floating point number can also be a scientific number with an "e" to indicate the power of 10: <br>
+
+                Example <br>
+                float f1 = 35e3; <br>
+                double d1 = 12E4; <br>
+                cout << f1; <br>
+                  cout << d1; <br><br>
+
+                    <strong>C++ String Data Types</strong>
+                    String Types <br>
+                    The string type is used to store a sequence of characters (text). This is not a built-in type, but
+                    it behaves like one in its most basic usage. String values must be surrounded by double quotes:
+                    <br>
+
+                    Example <br>
+                    string greeting = "Hello"; <br>
+                    cout << greeting; <br>
+                      To use strings, you must include an additional header file in the source code, the <string>
+                        library: <br>
+
+                        Example <br>
+                        // Include the string library <br>
+                        #include &lt;string&gt; <br>
+
+                        // Create a string variable <br>
+                        string greeting = "Hello"; <br>
+
+                        // Output string value <br>
+                        cout << greeting; <br><br>
+
+                          <strong>C++ Character Data Types</strong><br>
+                          Character Types <br>
+                          The char data type is used to store a single character. The character must be surrounded by
+                          single quotes, like 'A' or 'c': <br>
+
+                          Example <br>
+                          char myGrade = 'B'; <br>
+                          cout << myGrade; <br>
+                            Alternatively, you can use ASCII values to display certain characters: <br>
+
+                            Example <br>
+                            char a = 65, b = 66, c = 67; <br>
+                            cout << a; <br>
+                              cout << b; <br>
+                                cout << c; <br>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          C++ ARRAYS
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <br>
+          Arrays are used to store multiple values in a single variable, instead of declaring separate variables for
+          each value. b <br>
+
+          To declare an array, define the variable type, specify the name of the array followed by square brackets and
+          specify the number of elements it should store: <br>
+          string cars[4]; <br>
+
+          We have now declared a variable that holds an array of four strings. To insert values to it, we can use an
+          array literal - place the values in a comma-separated list, inside curly braces: <br>
+
+          string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"}; <br>
+
+          To create an array of three integers, you could write: <br>
+
+          int myNum[3] = {10, 20, 30}; <br>
+          Access the Elements of an Array <br>
+          You access an array element by referring to the index number inside square brackets []. <br>
+          This statement accesses the value of the first element in cars: <br>
+          Example <br>
+          string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"}; <br>
+          cout << cars[0]; <br>
+            // Outputs Volvo <br>
+            Note: Array indexes start with 0: [0] is the first element. [1] is the second element, etc. <br>
+            Change an Array Element <br>
+            To change the value of a specific element, refer to the index number: <br>
+            cars[0] = "Opel"; <br>
+            Example <br>
+            string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"}; <br>
+            cars[0] = "Opel"; <br>
+            cout << cars[0]; <br>
+              // Now outputs Opel instead of Volvo <br><br>
+
+              <strong>C++ Arrays and Loops</strong> <br>
+              Loop Through an Array <br>
+              You can loop through the array elements with the for loop. <br>
+
+              The following example outputs all elements in the cars array: <br>
+
+              Example <br>
+              string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"}; <br>
+              for (int i = 0; i < 4; i++) { <br>
+                cout << cars[i] << "\n" ; <br>
+                  } <br>
+                  The following example outputs the index of each element together with its value: <br>
+
+                  Example <br>
+                  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"}; <br>
+                  for (int i = 0; i < 4; i++) { <br>
+                    cout << i << ": " << cars[i] << "\n" ; <br>
+                      }<br><br>
+
+                      <strong> C++ Omit Array Size</strong><br>
+                      Omit Array Size <br>
+                      You don't have to specify the size of the array. But if you don't, it will only be as big as the
+                      elements that are inserted into it: <br>
+
+                      string cars[] = {"Volvo", "BMW", "Ford"}; // size of array is always 3 <br>
+                      This is completely fine. However, the problem arise if you want extra space for future elements.
+                      Then you have to overwrite the existing values: <br>
+
+                      string cars[] = {"Volvo", "BMW", "Ford"}; <br>
+                      string cars[] = {"Volvo", "BMW", "Ford", "Mazda", "Tesla"}; <br>
+                      If you specify the size however, the array will reserve the extra space: <br>
+
+                      string cars[5] = {"Volvo", "BMW", "Ford"}; // size of array is 5, <br>even though it's only three
+                      elements inside it
+                      Now you can add a fourth and fifth element without overwriting the others: <br>
+
+                      Example <br>
+                      cars[3] = "Mazda"; <br>
+                      cars[4] = "Tesla"; <br>
+                      Omit Elements on Declaration <br>
+                      It is also possible to declare an array without specifying the elements on declaration, and add
+                      them later: <br>
+
+                      Example <br>
+                      string cars[5]; <br>
+                      cars[0] = "Volvo"; <br>
+                      cars[1] = "BMW"; <br>
+                      ... <br><br>
+
+                      <strong> C++ Array Size</strong><br>
+                      Get the Size of an Array<br>
+                      To get the size of an array, you can use the sizeof() operator: <br>
+
+                      Example <br>
+                      int myNumbers[5] = {10, 20, 30, 40, 50}; <br>
+                      cout << sizeof(myNumbers); <br>
+                        Result: <br>
+
+                        20 <br>
+                        Why did the result show 20 instead of 5, when the array contains 5 elements? <br>
+
+                        It is because the sizeof() operator returns the size of a type in bytes. <br>
+
+                        You learned from the Data Types chapter that an int type is usually 4 bytes, so from the example
+                        above, 4 x 5 (4 bytes x 5 elements) = 20 bytes. <br>
+
+                        To find out how many elements an array has, you have to divide the size of the array by the size
+                        of the data type it contains: <br>
+
+                        Example <br>
+                        int myNumbers[5] = {10, 20, 30, 40, 50}; <br>
+                        int getArrayLength = sizeof(myNumbers) / sizeof(int); <br>
+                        cout << getArrayLength; <br>
+                          Result:<br>
+                          5<br><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+          aria-expanded="true" aria-controls="collapseFive">
+          C++ Structures (struct)
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Structures (also called structs) are a way to group several related variables into one place. Each variable in
+          the structure is known as a member of the structure. <br>
+          Unlike an array, a structure can contain many different data types (int, string, bool, etc.). <br>
+          <strong> Create a Structure</strong> <br>
+          To create a structure, use the struct keyword and declare each of its members inside curly braces. <br>
+
+          After the declaration, specify the name of the structure variable (myStructure in the example below): <br>
+
+          struct { // Structure declaration <br>
+          int myNum; // Member (int variable) <br>
+          string myString; // Member (string variable) <br>
+          } myStructure; // Structure variable <br><br>
+          Access Structure Members <br>
+          To access members of a structure, use the dot syntax (.): <br><br>
+
+          <strong>Example</strong> <br>
+          Assign data to members of a structure and print it: <br>
+
+          // Create a structure variable called myStructure <br>
+          struct { <br>
+          int myNum; <br>
+          string myString; <br>
+          } myStructure; <br>
+
+          // Assign values to members of myStructure <br>
+          myStructure.myNum = 1; <br>
+          myStructure.myString = "Hello World!"; <br>
+
+          // Print members of myStructure <br>
+          cout << myStructure.myNum << "\n" ; <br>
+            cout << myStructure.myString << "\n" ; <br>
+              One Structure in Multiple Variables <br>
+              You can use a comma (,) to use one structure in many variables: <br>
+
+              struct { <br>
+              int myNum; <br>
+              string myString; <br>
+              } myStruct1, myStruct2, myStruct3; // Multiple structure variables separated with commas <br>
+              This example shows how to use a structure in two different variables: <br>
+
+              Example <br>
+              Use one structure to represent two cars: <br>
+
+              struct { <br>
+              string brand; <br>
+              string model; <br>
+              int year; <br>
+              } myCar1, myCar2; // We can add variables by separating them with a comma here <br>
+
+              // Put data into the first structure <br>
+              myCar1.brand = "BMW"; <br>
+              myCar1.model = "X5"; <br>
+              myCar1.year = 1999; <br>
+
+              // Put data into the second structure <br>
+              myCar2.brand = "Ford"; <br>
+              myCar2.model = "Mustang"; <br>
+              myCar2.year = 1969; <br>
+
+              // Print the structure members <br>
+              cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n" ; <br>
+                cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n" ; <br>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+          aria-expanded="true" aria-controls="collapseSix">
+          C++ Pointers
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          Creating Pointers <br>
+          You learned from the previous chapter, that we can get the memory address of a variable by using the &
+          operator: <br><br>
+
+          Example <br>
+          string food = "Pizza"; // A food variable of type string <br>
+
+          cout << food; // Outputs the value of food (Pizza) <br>
+            cout << &food; // Outputs the memory address of food (0x6dfed4) <br>
+              A pointer however, is a variable that stores the memory address as its value. <br>
+
+              A pointer variable points to a data type (like int or string) of the same type, and is created with the *
+              operator. The address of the variable you're working with is assigned to the pointer: <br><br>
+
+             <strong>Example</strong> <br>
+              string food = "Pizza"; // A food variable of type string <br>
+              string* ptr = &food; // A pointer variable, with the name ptr, that stores the address of food <br>
+
+              // Output the value of food (Pizza) <br>
+              cout << food << "\n" ; <br>
+
+                // Output the memory address of food (0x6dfed4) <br>
+                cout << &food << "\n" ; <br>
+
+                  // Output the memory address of food with the pointer (0x6dfed4) <br>
+                  cout << ptr << "\n" ; <br>
+                    Example explained <br>
+                    Create a pointer variable with the name ptr, that points to a string variable, by using the asterisk
+                    sign * (string* ptr). Note that the type of the pointer has to match the type of the variable you're
+                    working with. <br>
+
+                    Use the & operator to store the memory address of the variable called food, and assign it to the
+                    pointer. <br>
+
+                    Now, ptr holds the value of food's memory address. <br>
+
+                    Tip: There are three ways to declare pointer variables, but the first way is preferred: <br>
+
+                    string* mystring; // Preferred <br>
+                    string *mystring; <br>
+                    string * mystring; <br>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Merriweather&family=Montserrat&family=Nunito:wght@200;300;400;600;700&family=Readex+Pro&family=Sacramento&display=swap');
+  </style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SmartStudy</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="computer_mat.html" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Engineering Subjects
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a id="comp" class="dropdown-item" href="computer_mat.html">Computer</a></li>
+            <li><a id="it" class="dropdown-item" href="it_pdf.html">Information Technology</a></li>
+            <!-- <li><a id="entc" class="dropdown-item" href="#">Electronics & Telecommunication</a></li> -->
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <button id="login" class="btn btn-outline-success mx-4" type="submit"><a href="login.html">Login</a></button>
+        <button id="signup" class="btn btn-outline-success mx-4" type="submit"><a href="signup.html">Signup</a></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div class="accordion-item-py">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+        aria-expanded="true" aria-controls="collapseOne">
+        Python Introduction
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        What is Python? <br>
+        Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+        It is used for: <br>
+
+        web development (server-side), <br>
+        software development, <br>
+        mathematics, <br>
+        system scripting. <br><br>
+        What can Python do? <br>
+        Python can be used on a server to create web applications. <br>
+        Python can be used alongside software to create workflows. <br>
+        Python can connect to database systems. It can also read and modify files. <br>
+        Python can be used to handle big data and perform complex mathematics. <br>
+        Python can be used for rapid prototyping, or for production-ready software development. <br><br>
+        Why Python? <br>
+        Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc). <br>
+        Python has a simple syntax similar to the English language. <br>
+        Python has syntax that allows developers to write programs with fewer lines than some other programming
+        languages. <br>
+        Python runs on an interpreter system, meaning that code can be executed as soon as it is written. <br>This means
+        that prototyping can be very quick. <br>
+        Python can be treated in a procedural way, an object-oriented way or a functional way.
+        Good to know <br>
+        The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python
+        2, although not being updated with anything other than security updates, is still quite popular. <br>
+        In this tutorial Python will be written in a text editor. <br>It is possible to write Python in an Integrated
+        Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when
+        managing larger collections of Python files. <br>
+        Python Syntax compared to other programming languages <br>
+        Python was designed for readability, and has some similarities to the English language with influence from
+        mathematics. <br>
+        Python uses new lines to complete a command, as opposed to other programming languages which often use
+        semicolons or parentheses. <br>
+        Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and
+        classes. Other programming languages often use curly-brackets for this purpose. <br>
+        Example <br>
+        print("Hello, World!") <br><br>
+
+        Python Syntax <br>
+        Execute Python Syntax <br>
+        As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line: <br>
+
+        >>> print("Hello, World!") <br>
+        Hello, World! <br>
+
+        Python Indentation <br>
+        Indentation refers to the spaces at the beginning of a code line. <br>
+
+        Where in other programming languages the indentation in code is for readability only, the indentation in Python
+        <br>
+        is very important. <br>
+
+        Python uses indentation to indicate a block of code. <br><br>
+
+        Example <br>
+        if 5 > 2: <br>
+        print("Five is greater than two!") <br>
+        Python will give you an error if you skip the indentation: <br><br>
+
+        Example <br>
+        Syntax Error: <br>
+
+        if 5 > 2: <br>
+        print("Five is greater than two!") <br>
+        The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.
+        <br><br>
+
+        Example <br>
+        if 5 > 2: <br>
+        print("Five is greater than two!") <br>
+        if 5 > 2: <br>
+        print("Five is greater than two!") <br>
+        You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:
+        <br><br>
+
+        Example <br>
+        Syntax Error: <br>
+
+        if 5 > 2: <br>
+        print("Five is greater than two!") <br>
+        print("Five is greater than two!") <br>
+
+        Python Variables <br>
+        In Python, variables are created when you assign a value to it: <br><br>
+
+        Example <br>
+        Variables in Python: <br>
+
+        x = 5 <br>
+        y = "Hello, World!" <br>
+        Python has no command for declaring a variable. <br>
+
+        You will learn more about variables in the Python Variables chapter. <br>
+
+        Comments <br>
+        Python has commenting capability for the purpose of in-code documentation. <br>
+
+        Comments start with a #, and Python will render the rest of the line as a comment: <br><br>
+
+        Example <br>
+        Comments in Python: <br>
+
+        #This is a comment. <br>
+        print("Hello, World!") <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item-py">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+        aria-expanded="false" aria-controls="collapseTwo">
+        Python Strings
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Strings in python are surrounded by either single quotation marks, or double quotation marks. <br>
+
+        'hello' is the same as "hello". <br>
+
+        You can display a string literal with the print() function: <br>
+
+        <strong>Example</strong> <br>
+        print("Hello") <br>
+        print('Hello') <br>
+        Assign String to a Variable <br>
+        Assigning a string to a variable is done with the variable name followed by an equal sign and the string: <br>
+
+        <strong>Example</strong> <br>
+        a = "Hello" <br>
+        print(a) <br>
+        Multiline Strings <br>
+        You can assign a multiline string to a variable by using three quotes: <br>
+
+        <strong>Example</strong> <br>
+        You can use three double quotes: <br>
+
+        a = """Lorem ipsum dolor sit amet, <br>
+        consectetur adipiscing elit, <br>
+        sed do eiusmod tempor incididunt <br>
+        ut labore et dolore magna aliqua.""" <br>
+        print(a) <br>
+        Or three single quotes: <br>
+        <br>
+        <strong>Example</strong> <br>
+        a = '''Lorem ipsum dolor sit amet, <br>
+        consectetur adipiscing elit, <br>
+        sed do eiusmod tempor incididunt <br>
+        ut labore et dolore magna aliqua.''' <br>
+        print(a) <br>
+        Note: in the result, the line breaks are inserted at the same position as in the code. <br>
+        <br>
+        Strings are Arrays
+        Like many other popular programming languages, strings in Python are arrays of bytes representing unicode
+        characters. <br>
+        <br>
+        However, Python does not have a character data type, a single character is simply a string with a length of 1.
+        <br>
+
+        Square brackets can be used to access elements of the string. <br>
+
+        <strong>Example</strong> <br>
+        Get the character at position 1 (remember that the first character has the position 0): <br>
+
+        a = "Hello, World!" <br>
+        print(a[1]) <br>
+        Looping Through a String <br>
+        Since strings are arrays, we can loop through the characters in a string, with a for loop. <br>
+        <br>
+        <strong>Example</strong> <br>
+        Loop through the letters in the word "banana": <br>
+        <br>
+        for x in "banana": <br>
+        print(x) <br>
+        Learn more about For Loops in our Python For Loops chapter. <br>
+        <br>
+        String Length <br>
+        To get the length of a string, use the len() function. <br>
+        <br>
+        <strong>Example</strong> <br>
+        The len() function returns the length of a string: <br>
+        <br>
+        a = "Hello, World!" <br>
+        print(len(a)) <br>
+        Check String <br>
+        To check if a certain phrase or character is present in a string, we can use the keyword in. <br>
+        <br>
+        <strong>Example</strong> <br>
+        Check if "free" is present in the following text: <br>
+        <br>
+        txt = "The best things in life are free!" <br>
+        print("free" in txt) <br>
+        Use it in an if statement: <br>
+        <br>
+        <strong>Example</strong> <br>
+        Print only if "free" is present: <br>
+        <br>
+        txt = "The best things in life are free!" <br>
+        if "free" in txt: <br>
+        print("Yes, 'free' is present.") <br>
+        Learn more about If statements in our Python If...Else chapter. <br>
+        <br>
+        Check if NOT <br>
+        To check if a certain phrase or character is NOT present in a string, we can use the keyword not in. <br>
+        <br>
+        <strong>Example</strong> <br>
+        Check if "expensive" is NOT present in the following text: <br>
+
+        txt = "The best things in life are free!" <br>
+        print("expensive" not in txt) <br>
+        Use it in an if statement: <br>
+        <br>
+        Example <br>
+        print only if "expensive" is NOT present: <br>
+        <br>
+        txt = "The best things in life are free!" <br>
+        if "expensive" not in txt: <br>
+        print("No, 'expensive' is NOT present.") <br>
+        <br>
+
+        Python - Slicing Strings <br>
+        Slicing <br>
+        You can return a range of characters by using the slice syntax. <br>
+
+        Specify the start index and the end index, separated by a colon, to return a part of the string. <br>
+        <br>
+        Example <br>
+        Get the characters from position 2 to position 5 (not included): <br>
+        <br>
+        b = "Hello, World!" <br>
+        print(b[2:5]) <br>
+        Note: The first character has index 0. <br>
+        <br>
+        Slice From the Start <br>
+        By leaving out the start index, the range will start at the first character: <br>
+        <br>
+        Example <br>
+        Get the characters from the start to position 5 (not included): <br>
+        <br>
+        b = "Hello, World!" <br>
+        print(b[:5]) <br>
+        <br>
+        Slice To the End <br>
+        By leaving out the end index, the range will go to the end: <br>
+        <br>
+        Example <br>
+        Get the characters from position 2, and all the way to the end: <br>
+
+        b = "Hello, World!" <br>
+        print(b[2:]) <br>
+        Negative Indexing <br>
+        Use negative indexes to start the slice from the end of the string: <br>
+        Example <br>
+        Get the characters: <br>
+
+        From: "o" in "World!" (position -5) <br>
+
+        To, but not included: "d" in "World!" (position -2): <br>
+
+        b = "Hello, World!" <br>
+        print(b[-5:-2]) <br>
+        <br>
+        Python - String Methods <br>
+        String Methods <br>
+        Python has a set of built-in methods that you can use on strings. <br>
+        <br>
+        Note: All string methods returns new values. They do not change the original string. <br>
+        <br>
+        Method Description <br>
+        capitalize() --> Converts the first character to upper case <br>
+        casefold() --> Converts string into lower case <br>
+        center() --> Returns a centered string <br>
+        count() --> Returns the number of times a specified value occurs in a string <br>
+        encode() --> Returns an encoded version of the string <br>
+        endswith() --> Returns true if the string ends with the specified value <br>
+        expandtabs() --> Sets the tab size of the string <br>
+        find() --> Searches the string for a specified value and returns the position of where it was found <br>
+        format() --> Formats specified values in a string <br>
+        format_map() --> Formats specified values in a string <br>
+        index() --> Searches the string for a specified value and returns the position of where it was found <br>
+        isalnum() --> Returns True if all characters in the string are alphanumeric <br>
+        isalpha() --> Returns True if all characters in the string are in the alphabet <br>
+        isdecimal() --> Returns True if all characters in the string are decimals <br>
+        isdigit() --> Returns True if all characters in the string are digits <br>
+        isidentifier() --> Returns True if the string is an identifier <br>
+        islower() --> Returns True if all characters in the string are lower case <br>
+        isnumeric() --> Returns True if all characters in the string are numeric <br>
+        isprintable() --> Returns True if all characters in the string are printable <br>
+        isspace() --> Returns True if all characters in the string are whitespaces <br>
+        istitle() --> Returns True if the string follows the rules of a title <br>
+        isupper() --> Returns True if all characters in the string are upper case <br>
+        join() --> Joins the elements of an iterable to the end of the string <br>
+        ljust() --> Returns a left justified version of the string <br>
+        lower() --> Converts a string into lower case <br>
+        lstrip() --> Returns a left trim version of the string <br>
+        maketrans() --> Returns a translation table to be used in translations <br>
+        partition() --> Returns a tuple where the string is parted into three parts <br>
+        replace() --> Returns a string where a specified value is replaced with a specified value <br>
+        rfind() --> Searches the string for a specified value and returns the last position of where it was found <br>
+        rindex() --> Searches the string for a specified value and returns the last position of where it was found <br>
+        rjust() --> Returns a right justified version of the string <br>
+        rpartition() --> Returns a tuple where the string is parted into three parts <br>
+        rsplit() --> Splits the string at the specified separator, and returns a list <br>
+        rstrip() --> Returns a right trim version of the string <br>
+        split() --> Splits the string at the specified separator, and returns a list <br>
+        splitlines() --> Splits the string at line breaks and returns a list <br>
+        startswith() --> Returns true if the string starts with the specified value <br>
+        strip() --> Returns a trimmed version of the string <br>
+        swapcase() --> Swaps cases, lower case becomes upper case and vice versa <br>
+        title() --> Converts the first character of each word to upper case <br>
+        translate() --> Returns a translated string <br>
+        upper() --> Converts a string into upper case <br>
+        zfill() --> Fills the string with a specified number of 0 values at the beginning <br>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item-py">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+        aria-expanded="false" aria-controls="collapseThree">
+        Python Lists
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h3>List</h3> <br>
+        Lists are used to store multiple items in a single variable. <br>
+
+        Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set,
+        and Dictionary, all with different qualities and usage. <br>
+
+        Lists are created using square brackets: <br>
+        <br>
+        Example <br>
+        Create a List: <br>
+
+        thislist = ["apple", "banana", "cherry"] <br>
+        print(thislist) <br>
+        List Items <br>
+        List items are ordered, changeable, and allow duplicate values. <br>
+
+        List items are indexed, the first item has index [0], the second item has index [1] etc. <br>
+
+        Ordered <br>
+        When we say that lists are ordered, it means that the items have a defined order, and that order will not
+        change. <br>
+
+        If you add new items to a list, the new items will be placed at the end of the list. <br>
+
+        Note: There are some list methods that will change the order, but in general: the order of the items will not
+        change. <br>
+
+        Changeable <br>
+        The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+        <br>
+
+        Allow Duplicates <br>
+        Since lists are indexed, lists can have items with the same value: <br>
+        <br>
+        Example <br>
+        Lists allow duplicate values: <br>
+        <br>
+        thislist = ["apple", "banana", "cherry", "apple", "cherry"] <br>
+        print(thislist) <br>
+        ADVERTISEMENT
+        <br>
+        List Length <br>
+        To determine how many items a list has, use the len() function: <br>
+        <br>
+        Example <br>
+        Print the number of items in the list: <br>
+
+        thislist = ["apple", "banana", "cherry"] <br>
+        print(len(thislist)) <br>
+        List Items - Data Types <br>
+        List items can be of any data type: <br>
+        <br>
+        Example <br>
+        String, int and boolean data types: <br>
+
+        list1 = ["apple", "banana", "cherry"] <br>
+        list2 = [1, 5, 7, 9, 3] <br>
+        list3 = [True, False, False] <br>
+        A list can contain different data types: <br>
+        <br>
+        Example <br>
+        A list with strings, integers and boolean values: <br>
+        <br>
+        list1 = ["abc", 34, True, 40, "male"] <br>
+        type() <br>
+        From Python's perspective, lists are defined as objects with the data type 'list': <br>
+        <br>
+        &lt;class 'list'&gt; <br>
+        Example <br>
+        What is the data type of a list? <br>
+        <br>
+        mylist = ["apple", "banana", "cherry"] <br>
+        print(type(mylist)) <br>
+        The list() Constructor <br>
+        It is also possible to use the list() constructor when creating a new list. <br>
+        <br>
+        Example <br>
+        Using the list() constructor to make a List: <br>
+        <br>
+        thislist = list(("apple", "banana", "cherry")) # note the double round-brackets <br>
+        print(thislist) <br>
+
+        <h2>Python - Access List Items</h2> <br>
+        Access Items <br>
+        List items are indexed and you can access them by referring to the index number: <br>
+        <br>
+        Example <br>
+        Print the second item of the list: <br>
+        <br>
+        thislist = ["apple", "banana", "cherry"] <br>
+        print(thislist[1]) <br>
+        Note: The first item has index 0. <br>
+        <br>
+        Negative Indexing <br>
+        Negative indexing means start from the end <br>
+        <br>
+        -1 refers to the last item, -2 refers to the second last item etc. <br>
+        <br>
+        Example <br>
+        Print the last item of the list: <br>
+        <br>
+        thislist = ["apple", "banana", "cherry"] <br>
+        print(thislist[-1]) <br>
+        Range of Indexes <br>
+        You can specify a range of indexes by specifying where to start and where to end the range. <br>
+        <br>
+        When specifying a range, the return value will be a new list with the specified items. <br>
+        <br>
+        Example <br>
+        Return the third, fourth, and fifth item: <br>
+        <br>
+        thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"] <br>
+        print(thislist[2:5]) <br>
+        Note: The search will start at index 2 (included) and end at index 5 (not included). <br>
+        <br>
+        Remember that the first item has index 0. <br>
+        <br>
+        By leaving out the start value, the range will start at the first item: <br>
+        <br>
+        Example <br>
+        This example returns the items from the beginning to, but NOT including, "kiwi": <br>
+        <br>
+        thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"] <br>
+        print(thislist[:4]) <br>
+        By leaving out the end value, the range will go on to the end of the list: <br>
+        <br>
+        Example <br>
+        This example returns the items from "cherry" to the end: <br>
+        <br>
+        thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"] <br>
+        print(thislist[2:]) <br>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item-py">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+        aria-expanded="true" aria-controls="collapseFour">
+        Python Tuples
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+
+        mytuple = ("apple", "banana", "cherry") <br>
+        Tuple <br>
+        Tuples are used to store multiple items in a single variable. <br>
+        <br>
+        Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set,
+        and Dictionary, all with different qualities and usage. <br>
+        <br>
+        A tuple is a collection which is ordered and unchangeable. <br>
+        <br>
+        Tuples are written with round brackets. <br>
+        <br>
+        Example <br>
+        Create a Tuple: <br>
+        <br>
+        thistuple = ("apple", "banana", "cherry") <br>
+        print(thistuple) <br>
+        Tuple Items <br>
+        Tuple items are ordered, unchangeable, and allow duplicate values. <br>
+        <br>
+        Tuple items are indexed, the first item has index [0], the second item has index [1] etc. <br>
+        <br>
+        Ordered <br>
+        When we say that tuples are ordered, it means that the items have a defined order, and that order will not
+        change. <br>
+        <br>
+        Unchangeable <br>
+        Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+        <br>
+        <br>
+        Allow Duplicates <br>
+        Since tuples are indexed, they can have items with the same value: <br>
+        <br>
+        Example <br>
+        Tuples allow duplicate values: <br>
+        <br>
+        thistuple = ("apple", "banana", "cherry", "apple", "cherry") <br>
+        print(thistuple) <br>
+        <br>
+        Tuple Length <br>
+        To determine how many items a tuple has, use the len() function: <br>
+        <br>
+        Example <br>
+        Print the number of items in the tuple: <br>
+        <br>
+        thistuple = ("apple", "banana", "cherry") <br>
+        print(len(thistuple)) <br>
+        Create Tuple With One Item <br>
+        To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not
+        recognize it as a tuple. <br>
+        <br>
+        Example <br>
+        One item tuple, remember the comma: <br>
+        <br>
+        thistuple = ("apple",) <br>
+        print(type(thistuple)) <br>
+        <br>
+        #NOT a tuple <br>
+        thistuple = ("apple") <br>
+        print(type(thistuple)) <br>
+        Tuple Items - Data Types <br>
+        Tuple items can be of any data type: <br>
+        <br>
+        Example <br>
+        String, int and boolean data types: <br>
+        <br>
+        tuple1 = ("apple", "banana", "cherry") <br>
+        tuple2 = (1, 5, 7, 9, 3) <br>
+        tuple3 = (True, False, False) <br>
+        A tuple can contain different data types: <br>
+        <br>
+        Example <br>
+        A tuple with strings, integers and boolean values: <br>
+        <br>
+        tuple1 = ("abc", 34, True, 40, "male") <br>
+        type() <br>
+        From Python's perspective, tuples are defined as objects with the data type 'tuple': <br>
+        <br>
+        &lt;class 'tuple'&gt; <br>
+        Example <br>
+        What is the data type of a tuple? <br>
+        <br>
+        mytuple = ("apple", "banana", "cherry") <br>
+        print(type(mytuple)) <br>
+        The tuple() Constructor <br>
+        It is also possible to use the tuple() constructor to make a tuple. <br>
+        <br>
+        Example <br>
+        Using the tuple() method to make a tuple: <br>
+        <br>
+        thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets <br>
+        print(thistuple) <br><br>
+
+        <h3>Python - Update Tuples</h3> <br>
+        Tuples are unchangeable, meaning that you cannot change, add, or remove items once the tuple is created. <br>
+        <br>
+        But there are some workarounds. <br>
+        <br>
+        Change Tuple Values <br>
+        Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is
+        called. <br>
+        <br>
+        But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back
+        into a tuple. <br>
+        <br>
+        Example <br>
+        Convert the tuple into a list to be able to change it: <br>
+        <br>
+        x = ("apple", "banana", "cherry") <br>
+        y = list(x) <br>
+        y[1] = "kiwi" <br>
+        x = tuple(y) <br>
+        <br>
+        print(x) <br>
+        Add Items <br>
+        Since tuples are immutable, they do not have a build-in append() method, but there are other ways to add items
+        to a tuple. <br>
+        <br>
+        1. Convert into a list: Just like the workaround for changing a tuple, you can convert it into a list, add your
+        item(s), and convert it back into a tuple. <br>
+        <br>
+        Example <br>
+        Convert the tuple into a list, add "orange", and convert it back into a tuple: <br>
+        <br>
+        thistuple = ("apple", "banana", "cherry") <br>
+        y = list(thistuple) <br>
+        y.append("orange") <br>
+        thistuple = tuple(y) <br>
+        2. Add tuple to a tuple. You are allowed to add tuples to tuples, so if you want to add one item, (or many),
+        create a new tuple with the item(s), and add it to the existing tuple:
+        <br>
+        Example <br>
+        Create a new tuple with the value "orange", and add that tuple: <br>
+        <br>
+        thistuple = ("apple", "banana", "cherry") <br>
+        y = ("orange",) <br>
+        thistuple += y <br>
+        <br>
+        print(thistuple) <br>
+        Note: When creating a tuple with only one item, remember to include a comma after the item, otherwise it will
+        not be identified as a tuple. <br>
+        <br>
+        <br>
+        Remove Items <br>
+        Note: You cannot remove items in a tuple. <br>
+        <br>
+        Tuples are unchangeable, so you cannot remove items from it, but you can use the same workaround as we used for
+        changing and adding tuple items: <br>
+        <br>
+        Example <br>
+        Convert the tuple into a list, remove "apple", and convert it back into a tuple: <br>
+        <br>
+        thistuple = ("apple", "banana", "cherry") <br>
+        y = list(thistuple) <br>
+        y.remove("apple") <br>
+        thistuple = tuple(y) <br>
+        Or you can delete the tuple completely: <br>
+        <br>
+        Example <br>
+        The del keyword can delete the tuple completely: <br>
+        <br>
+        thistuple = ("apple", "banana", "cherry") <br>
+        del thistuple <br>
+        print(thistuple) #this will raise an error because the tuple no longer exists <br>
+
+        <h3>Python - Tuple Methods</h3><br>
+        Tuple Methods <br>
+        Python has two built-in methods that you can use on tuples. <br>
+        <br>
+        Method Description <br>
+        count() Returns the number of times a specified value occurs in a tuple <br>
+        index() Searches the tuple for a specified value and returns the position of where it was found <br>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item-py">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+        aria-expanded="true" aria-controls="collapseFive">
+        Python Sets
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h3>Sets</h3><br><br>
+        myset = {"apple", "banana", "cherry"} <br>
+        Set <br>
+        Sets are used to store multiple items in a single variable. <br>
+        <br>
+        Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple,
+        and Dictionary, all with different qualities and usage.<br>
+
+        A set is a collection which is unordered, unchangeable*, and unindexed. <br>
+        <br>
+        * Note: Set items are unchangeable, but you can remove items and add new items. <br>
+        <br>
+        Sets are written with curly brackets. <br>
+        <br>
+        Example <br>
+        Create a Set: <br>
+        <br>
+        thisset = {"apple", "banana", "cherry"} <br>
+        print(thisset) <br>
+        Note: Sets are unordered, so you cannot be sure in which order the items will appear. <br>
+        <br>
+        Set Items <br>
+        Set items are unordered, unchangeable, and do not allow duplicate values. <br>
+        <br>
+        Unordered <br>
+        Unordered means that the items in a set do not have a defined order. <br>
+        <br>
+        Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
+        <br>
+        <br>
+        Unchangeable <br>
+        Set items are unchangeable, meaning that we cannot change the items after the set has been created. <br>
+        <br>
+        Once a set is created, you cannot change its items, but you can remove items and add new items. <br>
+        <br>
+        Duplicates Not Allowed <br>
+        Sets cannot have two items with the same value. <br>
+        <br>
+        Example <br>
+        Duplicate values will be ignored: <br>
+        <br>
+        thisset = {"apple", "banana", "cherry", "apple"} <br>
+        <br>
+        print(thisset) <br><br>
+
+        <h3>Python - Add Set Items</h3> <br>
+        Add Items <br>
+        Once a set is created, you cannot change its items, but you can add new items. <br>
+        <br>
+        To add one item to a set use the add() method. <br>
+        <br>
+        Example <br>
+        Add an item to a set, using the add() method: <br>
+        <br>
+        thisset = {"apple", "banana", "cherry"} <br>
+        <br>
+        thisset.add("orange") <br>
+        <br>
+        print(thisset) <br>
+        Add Sets <br>
+        To add items from another set into the current set, use the update() method. <br>
+        <br>
+        Example <br>
+        Add elements from tropical into thisset: <br>
+        <br>
+        thisset = {"apple", "banana", "cherry"} <br>
+        tropical = {"pineapple", "mango", "papaya"} <br>
+        <br>
+        thisset.update(tropical) <br>
+        <br>
+        print(thisset) <br>
+        Add Any Iterable <br>
+        The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists,
+        dictionaries etc.). <br>
+        <br>
+        Example <br>
+        Add elements of a list to at set: <br>
+        <br>
+        thisset = {"apple", "banana", "cherry"} <br>
+        mylist = ["kiwi", "orange"] <br>
+        <br>
+        thisset.update(mylist) <br>
+        <br>
+        print(thisset) <br>
+
+        <h3> Python - Remove Set Items</h3> <br>
+        Remove Item <br>
+        To remove an item in a set, use the remove(), or the discard() method. <br>
+        <br>
+        Example <br>
+        Remove "banana" by using the remove() method: <br>
+        <br>
+        thisset = {"apple", "banana", "cherry"} <br>
+        <br>
+        thisset.remove("banana") <br>
+        <br>
+        print(thisset) <br>
+        Note: If the item to remove does not exist, remove() will raise an error. <br>
+        <br>
+        Example <br>
+        Remove "banana" by using the discard() method: <br>
+        <br>
+        thisset = {"apple", "banana", "cherry"} <br>
+        <br>
+        thisset.discard("banana") <br>
+        <br>
+        print(thisset) <br>
+        Note: If the item to remove does not exist, discard() will NOT raise an error. <br>
+        <br>
+        You can also use the pop() method to remove an item, but this method will remove the last item. Remember that
+        sets are unordered, so you will not know what item that gets removed. <br>
+        <br>
+        The return value of the pop() method is the removed item. <br>
+        <br>
+        Example <br>
+        Remove the last item by using the pop() method: <br>
+        <br>
+        thisset = {"apple", "banana", "cherry"} <br>
+        <br>
+        x = thisset.pop() <br>
+        <br>
+        print(x) <br>
+        <br>
+        print(thisset) <br>
+        Note: Sets are unordered, so when using the pop() method, you do not know which item that gets removed. <br><br>
+
+        <h3>Python - Set Methods</h3> <br>
+        Set Methods <br>
+        Python has a set of built-in methods that you can use on sets. <br>
+        <br>
+        Method Description <br>
+        add() --> Adds an element to the set <br>
+        clear() --> Removes all the elements from the set <br>
+        copy() --> Returns a copy of the set <br>
+        difference() --> Returns a set containing the difference between two or more sets <br>
+        difference_update() --> Removes the items in this set that are also included in another, specified set <br>
+        discard() --> Remove the specified item <br>
+        intersection() --> Returns a set, that is the intersection of two other sets <br>
+        intersection_update() --> Removes the items in this set that are not present in other, specified set(s) <br>
+        isdisjoint() --> Returns whether two sets have a intersection or not <br>
+        issubset() --> Returns whether another set contains this set or not <br>
+        issuperset() --> Returns whether this set contains another set or not <br>
+        pop() --> Removes an element from the set <br>
+        remove() --> Removes the specified element <br>
+        symmetric_difference() --> Returns a set with the symmetric differences of two sets <br>
+        symmetric_difference_update() --> inserts the symmetric differences from this set and another <br>
+        union() --> Return a set containing the union of sets <br>
+        update() --> Update the set with the union of this set and others <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item-py">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+        aria-expanded="true" aria-controls="collapseSix">
+        Python Dictionaries
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h3> Dictionaries</h3> <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        Dictionary <br>
+        Dictionaries are used to store data values in key:value pairs. <br>
+        <br>
+        A dictionary is a collection which is ordered*, changeable and do not allow duplicates. <br>
+        <br>
+        As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered. <br>
+        <br>
+        Dictionaries are written with curly brackets, and have keys and values: <br>
+        <br>
+        Example <br>
+        Create and print a dictionary: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        print(thisdict) <br>
+        Dictionary Items <br>
+        Dictionary items are ordered, changeable, and does not allow duplicates. <br>
+        <br>
+        Dictionary items are presented in key:value pairs, and can be referred to by using the key name. <br>
+        <br>
+        Example <br>
+        Print the "brand" value of the dictionary: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        print(thisdict["brand"]) <br>
+        Ordered or Unordered? <br>
+        As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered. <br>
+        <br>
+        When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not
+        change. <br>
+        <br>
+        Unordered means that the items does not have a defined order, you cannot refer to an item by using an index.
+        <br>
+        <br>
+        Changeable <br>
+        Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been
+        created. <br>
+        <br>
+        Duplicates Not Allowed <br>
+        Dictionaries cannot have two items with the same key: <br>
+        <br>
+        Example <br>
+        Duplicate values will overwrite existing values: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964, <br>
+        "year": 2020 <br>
+        } <br>
+        print(thisdict) <br>
+        <br>
+        Dictionary Length <br>
+        To determine how many items a dictionary has, use the len() function: <br>
+        <br>
+        Example <br>
+        Print the number of items in the dictionary: <br>
+        <br>
+        print(len(thisdict)) <br>
+        Dictionary Items - Data Types <br>
+        The values in dictionary items can be of any data type: <br>
+        <br>
+        Example <br>
+        String, int, boolean, and list data types: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "electric": False, <br>
+        "year": 1964, <br>
+        "colors": ["red", "white", "blue"] <br>
+        } <br>
+        type() <br>
+        From Python's perspective, dictionaries are defined as objects with the data type 'dict': <br>
+        <br>
+        &lt;class 'dict'&gt; <br>
+        Example <br>
+        Print the data type of a dictionary: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        print(type(thisdict)) <br>
+
+        <h3>Python - Change Dictionary Items</h3> <br>
+        Change Values <br>
+        You can change the value of a specific item by referring to its key name: <br>
+        <br>
+        Example <br>
+        Change the "year" to 2018: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        thisdict["year"] = 2018 <br>
+        Update Dictionary <br>
+        The update() method will update the dictionary with the items from the given argument. <br>
+        <br>
+        The argument must be a dictionary, or an iterable object with key:value pairs. <br>
+        <br>
+        Example <br>
+        Update the "year" of the car by using the update() method: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        thisdict.update({"year": 2020}) <br>
+
+        <h3>Python - Add Dictionary Items</h3> <br>
+        Adding Items <br>
+        Adding an item to the dictionary is done by using a new index key and assigning a value to it: <br>
+        <br>
+        Example <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        thisdict["color"] = "red" <br>
+        print(thisdict) <br>
+        Update Dictionary <br>
+        The update() method will update the dictionary with the items from a given argument. If the item does not exist,
+        the item will be added. <br>
+        <br>
+        The argument must be a dictionary, or an iterable object with key:value pairs. <br>
+        <br>
+        Example <br>
+        Add a color item to the dictionary by using the update() method: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        thisdict.update({"color": "red"}) <br>
+
+        <h3>Python - Remove Dictionary Items</h3> <br>
+        Removing Items <br>
+        There are several methods to remove items from a dictionary: <br>
+        <br>
+        Example <br>
+        The pop() method removes the item with the specified key name: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        thisdict.pop("model") <br>
+        print(thisdict) <br>
+        Example <br>
+        The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
+        <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        thisdict.popitem() <br>
+        print(thisdict) <br>
+        Example <br>
+        The del keyword removes the item with the specified key name: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        del thisdict["model"] <br>
+        print(thisdict) <br>
+        Example <br>
+        The del keyword can also delete the dictionary completely: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        del thisdict <br>
+        print(thisdict) #this will cause an error because "thisdict" no longer exists. <br>
+        Example <br>
+        The clear() method empties the dictionary: <br>
+        <br>
+        thisdict = { <br>
+        "brand": "Ford", <br>
+        "model": "Mustang", <br>
+        "year": 1964 <br>
+        } <br>
+        thisdict.clear() <br>
+        print(thisdict) <br>
+
+        <h3>Python Dictionary Methods</h3> <br>
+        Dictionary Methods <br>
+        Python has a set of built-in methods that you can use on dictionaries. <br>
+        <br>
+        Method Description <br>
+        clear() --> Removes all the elements from the dictionary <br>
+        copy() --> Returns a copy of the dictionary <br>
+        fromkeys() --> Returns a dictionary with the specified keys and value <br>
+        get() --> Returns the value of the specified key <br>
+        items() --> Returns a list containing a tuple for each key value pair <br>
+        keys() --> Returns a list containing the dictionary's keys <br>
+        pop() --> Removes the element with the specified key <br>
+        popitem() --> Removes the last inserted key-value pair <br>
+        setdefault() --> Returns the value of the specified key. If the key does not exist: insert the key, with the
+        specified value <br>
+        update() --> Updates the dictionary with the specified key-value pairs <br>
+        values() --> Returns a list of all the values in the dictionary <br>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
